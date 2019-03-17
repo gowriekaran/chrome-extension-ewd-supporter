@@ -1,0 +1,67 @@
+.ewdPriority {
+    z-index: 10000000;
+}
+
+#ewdSupporterBookmarkContainer {
+    width: 40px;
+    position: fixed;
+    top: 40px;
+    right: 10px;
+}
+
+.ewdSupporterBookmark {
+    margin-top: 10px;
+    float: left;
+    transition: 0.5s all ease;
+}
+
+.ewdSupporterBookmark:hover {
+    transform: scale(1.2);
+}
+
+.ewdSupporterBookmark img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    filter: grayscale(100%);
+}
+
+.ewdSupporterStatus:first-child,
+.ewdSupporterBookmark:first-child {
+    margin-top: 0px;
+}
+
+.ewdSupporterStatus:focus,
+.ewdSupporterBookmark:focus {
+    outline: none;
+}
+
+#ewdSupporterStatusContainer {
+    position: fixed;
+    width: auto;
+    height: auto;
+    bottom: 10px;
+    right: 60px;
+}
+
+.ewdSupporterStatus {
+    width: auto;
+    color: black;
+    float: left;
+    margin-left: 15px;
+    border: 1px solid black;
+    border-radius: 1px;
+    padding: 7px;
+    background: white;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 1);
+    transition: 0.5s all ease;
+    user-select: none;
+}
+
+.ewdSupporterStatus:hover,
+.ewdSupporterStatus.selected {
+    cursor: pointer;
+    background: black;
+    color: white;
+}

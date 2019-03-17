@@ -4,15 +4,15 @@
 ---
 Features:
 - Lists the URL to every plugin' support page.
--- Essentially modernized bookmarks
+    - Essentially modernized bookmarks
 - Display the thread's current status in a super obvious way
--- Unresolved: Red
--- Resolved: Green
--- Not a support question: Yellow
+    - Unresolved: Red
+    - Resolved: Green
+    - Not a support question: Yellow
 - Easily set the thread status
--- One click process, rather than two. 
+    - One click process, rather than two. 
 - Enforce all URLs on topic pages to open in external tabs
--- Some users provide links without enabling "Open link in a new tab"
+    - Some users provide links without enabling "Open link in a new tab"
 - Automatically store reply input
--- To avoid unannoying situations 
+    - To avoid unannoying situations 
 (e.g. accidentally clicking the wrong thing and saying goodbye to what you just typed)

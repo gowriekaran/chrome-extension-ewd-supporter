@@ -5,6 +5,7 @@ var YELLOW = "#FFC107";
 var ORANGE = "#FF9800";
 
 $(document).ready(function () {
+
     //Run only if EWD
     if (!$(".display-name").length && $(".display-name").html() != "EtoileWebDesign") {
         return;
@@ -26,8 +27,14 @@ $(document).ready(function () {
             //Enforce all URLs on topic pages to open in external tabs
             $(".wporg-bbp-topic-site-url > a").not(".ewdSupporterBookmark").attr("target", "_blank");
         }
+
         //Viewing root
         else {
+
+            //Scroll to .bbp-pagination
+            $('html, body').animate({
+                scrollTop: $(".bbp-pagination").offset().top
+            }, 500);
 
             //Set non resolved threads to orange
             $(".bbp-topic-permalink").not(":has(.resolved)").css("color", ORANGE);

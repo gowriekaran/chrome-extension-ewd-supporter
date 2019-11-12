@@ -1,6 +1,6 @@
 {
     "name": "ewd-supporter",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Simple internal add-on to facilitate WordPress plugin support from Etoile Web Design (https://www.etoilewebdesign.com/)",
     "manifest_version": 2,
     "web_accessible_resources": [
@@ -16,7 +16,9 @@
     },
     "browser_action": {},
     "content_scripts": [{
-        "matches": ["https://wordpress.org/support/*"],
+        "matches": [
+            "https://wordpress.org/support/*"
+        ],
         "js": ["assets/js/jquery-3.3.1.min.js", "assets/js/contentScript.js"],
         "css": ["assets/css/style.css"]
     }],

@@ -9,6 +9,12 @@
     right: 10px;
 }
 
+#ewdSupporterBookmarkContainer2 {
+    width: 40px;
+    top: 40px;
+    right: 60px;
+}
+
 .ewdSupporterBookmark {
     margin-top: 10px;
     float: left;

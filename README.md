@@ -1,14 +1,25 @@
-# ewd-supporter
-## Internal add-on to facilitate WordPress plugin support for [Etoile Web Design](https://www.etoilewebdesign.com/)
-###### Note: This extension only runs on https://wordpress.org/support/* and works for the EWD WordPress account.
----
-Features:
-- Lists the URL to every plugin' support page.
-- Display the thread's current status in a super obvious way
-    - Unresolved: Red
-    - Resolved: Green
-    - Not a support question: Yellow
-- Easily set the thread status
-    - Because I'm lazy 
-- Enforce all URLs on topic pages to open in external tabs
-- Automatically store reply input
+# EWD Supporter
+
+EWD Supporter is an internal WP forum support chrome browser extension for [Etoile Web Design](https://www.etoilewebdesign.com/).
+
+##### All Features
+
+###### General feature:
+  - Bookmark container
+    - Easily switch between plugin forums
+  - Notification warning for viewing plugins as non-owner
+    - To prevent accidentally using the wrong account to reply to a topic
+
+###### Topic page features:
+  - Color code topic titles that are not resolved
+  - Color code author name that are non-owner 
+
+###### Thread page features:
+  - View thread status
+    - To make it more obvious
+  - Set thread status
+    - To make it more obvious
+  - Autosaves input in thread reply box
+    - To prevent accidentally leaving the page and losing progress
+  - Preview mode (BETA) to view reply outcome
+    - To view what the reply can look like

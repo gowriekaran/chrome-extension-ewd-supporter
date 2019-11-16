@@ -7,8 +7,6 @@ EWD Supporter is an internal WP forum support chrome browser extension for [Etoi
 ###### General feature:
   - Bookmark container
     - Easily switch between plugin forums
-  - Notification warning for viewing plugins as non-owner
-    - To prevent accidentally using the wrong account to reply to a topic
 
 ###### Topic page features:
   - Color code topic titles that are not resolved
@@ -23,3 +21,4 @@ EWD Supporter is an internal WP forum support chrome browser extension for [Etoi
     - To prevent accidentally leaving the page and losing progress
   - Preview mode (BETA) to view reply outcome
     - To view what the reply can look like
+  - Replaces reply box with error message if using the wrong account to reply to a topic

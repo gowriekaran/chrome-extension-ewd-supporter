@@ -34,6 +34,7 @@ $(document).ready(function () {
         "Five Star Restaurant Menu",
         "Five Star Business Profile"
     ];
+    var loginVerified = true;
 
     /*
         Purpose: Verify if WP Account owns plugins
@@ -41,7 +42,9 @@ $(document).ready(function () {
     function loginCheck(currentPlugin, pluginsList) {
         for (var x = 0; x < pluginsList.length; x++) {
             if (currentPlugin == pluginsList[x]) {
-                alert("WARNING: You are logged in as " + ewdSupporter_loggedInUser + "!");
+                $(".bbp-reply-form").html("<span style='color: red'>Error: You are logged in as " + ewdSupporter_loggedInUser + "!<br>You will not be able to reply.</span>");
+                loginVerified = false;
+                break;
             }
         }
     }
@@ -107,14 +110,16 @@ $(document).ready(function () {
                 Purpose: If on viewing topic, append status container
             */
             if (window.location.href.indexOf("topic") > -1) {
-                $.get(chrome.extension.getURL("assets/html/ewdSupporterStatusContainer.html"), function (data) {
-                    $(data).appendTo("body");
+                if (loginVerified) {
+                    $.get(chrome.extension.getURL("assets/html/ewdSupporterStatusContainer.html"), function (data) {
+                        $(data).appendTo("body");
 
-                    /*
-                        Purpose: Set the page status
-                    */
-                    setPageStatus();
-                });
+                        /*
+                            Purpose: Set the page status
+                        */
+                        setPageStatus();
+                    });
+                }
 
                 /*
                     Purpose: Load Preview mode feature (BETA)
@@ -163,12 +168,7 @@ $(document).ready(function () {
                     Purpose: Enforce all URLs on topic pages to open in external tabs
                 */
                 $("#bbpress-forums").find("a[rel='nofollow']").attr("target", "_blank");
-            }
-
-            /*
-                Purpose: Viewing root
-            */
-            else {
+            } else {
                 /*
                     Purpose: Set non resolved threads to orange
                 */

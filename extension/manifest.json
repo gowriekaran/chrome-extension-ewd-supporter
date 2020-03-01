@@ -1,12 +1,10 @@
 {
     "name": "ewd-supporter",
-    "version": "1.0.4",
+    "version": "2.0.0",
     "description": "Simple internal add-on to facilitate WordPress plugin support from Etoile Web Design (https://www.etoilewebdesign.com/)",
     "manifest_version": 2,
     "web_accessible_resources": [
-        "assets/html/ewdSupporterBookmarkContainer.html",
-        "assets/html/ewdSupporterStatusContainer.html",
-        "assets/html/ewdSupporterPreviewMessage.html"
+        "assets/html/ewdSupporterBookmarkContainer.html"
     ],
     "background": {
         "scripts": [

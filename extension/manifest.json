@@ -1,7 +1,7 @@
 {
     "name": "ewd-supporter",
-    "version": "2.0.0",
-    "description": "Simple internal add-on to facilitate WordPress plugin support from Etoile Web Design (https://www.etoilewebdesign.com/)",
+    "version": "2.0.1",
+    "description": "Internal Chrome Extension to facilitate troubleshooting for Etoile Web Design (https://www.etoilewebdesign.com/)",
     "manifest_version": 2,
     "web_accessible_resources": [
         "assets/html/ewdSupporterBookmarkContainer.html"

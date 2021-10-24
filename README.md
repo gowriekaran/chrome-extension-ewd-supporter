@@ -1,12 +1,7 @@
 # EWD Supporter
+Internal Chrome Extension to facilitate troubleshooting for [Etoile Web Design](https://www.etoilewebdesign.com/).
 
-EWD Supporter is an internal WP forum support chrome browser extension for [Etoile Web Design](https://www.etoilewebdesign.com/).
-
-##### All Features
-
-###### General feature:
-  - Bookmark container
-    - Easily switch between plugin forums
-
-###### Topic page features:
-  - Color code author name that are non-owner 
+##### Features
+- Floating bookmarks container that contains all plugin active support thread URLs
+- Color code user handles
+- Auto scroll to threads container

@@ -1,10 +1,10 @@
 {
     "name": "ewd-supporter",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Internal Chrome Extension to facilitate troubleshooting for Etoile Web Design (https://www.etoilewebdesign.com/)",
     "manifest_version": 2,
     "web_accessible_resources": [
-        "assets/html/ewdSupporterBookmarkContainer.html"
+        "assets/html/ewdSupporterControlsContainer.html"
     ],
     "background": {
         "scripts": [

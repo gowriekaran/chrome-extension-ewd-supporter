@@ -3,16 +3,26 @@
     position: fixed;
 }
 
-#ewdSupporterBookmarkContainer {
+#ewdSupporterControlsContainer {
     width: 40px;
     top: 40px;
     right: 10px;
 }
 
-#ewdSupporterBookmarkContainer2 {
+#ewdSupporterControlsContainer2 {
     width: 40px;
     top: 40px;
     right: 60px;
+}
+
+#ewdSupporterControlsContainer3 {
+    right: 10px;
+    bottom: 10px;
+    background: black;
+    cursor: pointer;
+    border: 5px solid red;
+    color: red;
+    padding: 10px;
 }
 
 .ewdSupporterBookmark {
